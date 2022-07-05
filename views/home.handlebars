@@ -1,0 +1,12 @@
+{{! <h1>Example App: Home</h1> }}
+
+<form action="/" method="POST" enctype="multipart/form-data">
+  <h3>画像をアップロードする</h3>
+  <input type="file" name="sampleFile" accept="image/*" />
+  <input type="submit" class="btn btn-primary" />
+</form>
+
+<div>
+  <p>↓に保存された画像が出力されます</p>
+  <img src="/img/default.jpg" alt="sampleImage" />
+</div>
