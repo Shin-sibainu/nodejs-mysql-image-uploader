@@ -12,9 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
+    "express-domain-middleware": "^0.1.0",
     "express-fileupload": "^1.4.0",
     "express-handlebars": "^6.0.6",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.18"

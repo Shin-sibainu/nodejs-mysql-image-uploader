@@ -7,6 +7,16 @@
 </form>
 
 <div>
-  <p>↓に保存された画像が出力されます</p>
-  <img src="/img/default.jpg" alt="sampleImage" />
+  {{#each rows}}
+    <p>↓に保存された画像が出力されます</p>
+    {{! <img src="/img/default.jpg" alt="sampleImage" /> }}
+    {{#if this.image}}
+      <img src={{this.image}} alt={{this.image}} />
+    {{else}}
+      <img src="" alt="" />
+    {{/if}}
+    <p>
+      {{this.image}}
+    </p>
+  {{/each}}
 </div>
